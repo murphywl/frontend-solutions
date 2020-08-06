@@ -1,0 +1,27 @@
+body {
+  background-color: #333;
+}
+
+.fullscreen-block {
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fullscreen-block__item {
+  align-items: center;
+  display: flex;
+  height: 20%;
+  justify-content: center;
+}
+
+.fullscreen-block__item:nth-child(odd) {
+  background-color: #DCA344;
+  color: #fff;
+}
+
+.fullscreen-block__item:nth-child(even) {
+  background-color: #F73859;
+  color: #fff;;
+}
